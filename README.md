@@ -1,9 +1,7 @@
 <div align="center">
   <h1>Autonomous AI Research Engine</h1>
   <p>Generative AI pipeline for autonomous arXiv extraction and structural matrix parsing.</p>
-  
-  <img src="https://via.placeholder.com/800x400/1a1a2e/ffffff?text=[Insert+Dashboard+Screenshot+Here]" alt="UI Dashboard" width="80%">
-  <br/><br/>
+ 
   
   <a href="https://fastapi.tiangolo.com"><img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" /></a>
   <a href="https://groq.com"><img src="https://img.shields.io/badge/Groq_Llama_3.3-F55036?style=for-the-badge&logo=groq&logoColor=white" /></a>
