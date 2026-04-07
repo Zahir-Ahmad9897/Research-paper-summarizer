@@ -18,7 +18,7 @@ A high-performance Generative AI orchestrator designed to eliminate manual liter
 
 ### Pipeline Workflow
 ```mermaid
-flowchart LR
+ 
     A
     [Input Query] --> B[Enhance Query via LLM]
     B --> C[User Selects Query]
