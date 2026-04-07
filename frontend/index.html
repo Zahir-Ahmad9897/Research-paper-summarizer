@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research Summarizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo-box">✨</div>
+            <h1>Automated AI Research Parsing</h1>
+            <p>Enter a topic, and AI will autonomously augment your query, fetch academia, and extract deep quantitative metadata directly into structured models.</p>
+        </header>
+
+        <section id="step-1" class="glass-card active">
+            <h2>1. Define Research parameters</h2>
+            <div class="input-group">
+                <input type="text" id="raw-query" class="stellar-input" placeholder="e.g., 'transformer models for medical imaging'" />
+                <button id="btn-enhance" class="stellar-button primary">Enhance Query &rarr;</button>
+            </div>
+            <div id="loader-1" class="loader hidden">
+                <div class="spinner"></div><span class="pulsing-text">AI is mapping query taxonomy...</span>
+            </div>
+        </section>
+
+        <section id="step-2" class="glass-card compacted">
+            <h2>2. Optimization Trajectory</h2>
+            <p class="subtitle">AI generated precise API configurations. Select optimal vector.</p>
+            <div id="query-options" class="options-grid"></div>
+            <div class="input-group mt-1">
+                <input type="text" id="selected-query" class="stellar-input secondary" />
+                <button id="btn-search" class="stellar-button primary">Engage arXiv Core</button>
+            </div>
+            <div id="loader-2" class="loader hidden">
+                <div class="spinner"></div><span class="pulsing-text">Indexing neural literature matches...</span>
+            </div>
+        </section>
+
+        <section id="step-3" class="glass-card compacted wide">
+            <h2>3. Target Acquisition</h2>
+            <p class="subtitle">Select the academic targets below for structural extraction.</p>
+            <div id="papers-list" class="papers-grid"></div>
+            <div class="action-footer">
+                <button id="btn-summarize" class="stellar-button primary pulse">Assemble Pipeline and Execute</button>
+            </div>
+            <div id="loader-3" class="loader hidden">
+                <div class="spinner"></div><span class="pulsing-text">Extracting metadata. This takes ~10 seconds per paper...</span>
+            </div>
+        </section>
+
+        <section id="step-4" class="compacted">
+            <h2 class="section-title">4. Deep Extraction Matrix</h2>
+            <div id="results-container" class="results-layout"></div>
+        </section>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

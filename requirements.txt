@@ -1,0 +1,38 @@
+# ─── LangChain core ───────────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-groq>=0.1.0
+langchain-core>=0.2.0
+
+# ─── Free model providers ─────────────────────────────────────────────────────
+groq                    # Groq cloud free tier (Llama 3.1, Mixtral)
+ollama                  # Local models — zero cost fallback
+
+# ─── arXiv and PDF handling ───────────────────────────────────────────────────
+arxiv                   # arXiv API wrapper (optional, we use requests directly)
+pymupdf                 # PDF text extraction (import as fitz)
+requests                # HTTP for PDF download and arXiv API
+
+# ─── Output parsing and data ──────────────────────────────────────────────────
+pydantic>=2.0           # Structured output models (17-field schema)
+pandas                  # Table handling and CSV export
+
+# ─── UI and export ────────────────────────────────────────────────────────────
+streamlit>=1.35.0       # Web interface
+pdfkit                  # PDF export (requires wkhtmltopdf binary)
+markdown                # Markdown export helper
+
+# ─── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv           # Load GROQ_API_KEY from .env file
+
+# ─── Testing ──────────────────────────────────────────────────────────────────
+pytest>=7.0.0
+
+# ─── Install notes ────────────────────────────────────────────────────────────
+# 1. Install all:        pip install -r requirements.txt
+# 2. For PDF export:     sudo apt install wkhtmltopdf   (Linux)
+#                        brew install wkhtmltopdf        (macOS)
+# 3. For Ollama:         Install from https://ollama.com
+#                        Then run: ollama pull mistral
+# 4. Create .env file:   echo "GROQ_API_KEY=your_key_here" > .env
+#    Get free key at:    https://console.groq.com

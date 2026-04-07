@@ -1,0 +1,65 @@
+# ─── Python bytecode & cache ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# ─── Virtual environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ─── Environment / Secrets ────────────────────────────────────────────────────
+# NEVER commit real API keys. Use .env.example as a template.
+.env
+.env.local
+.env.*.local
+
+# ─── Runtime / Application state ─────────────────────────────────────────────
+cache/llm_cache.db
+cache/*.db
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Export outputs (generated at runtime) ────────────────────────────────────
+# Note: source code lives in export/ (no 's'), runtime output goes to exports/
+exports/
+*.csv
+*.pdf
+*.xlsx
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ─── Build artifacts ─────────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# ─── Testing ─────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# ─── Type checking / linting ─────────────────────────────────────────────────
+.mypy_cache/
+.ruff_cache/
+
+# ─── IDEs & editors ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── OS-specific ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
