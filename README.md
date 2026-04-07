@@ -18,12 +18,11 @@ A high-performance Generative AI orchestrator designed to eliminate manual liter
 
 ### Pipeline Workflow
 ```mermaid
- 
-    A
-    [Input Query] --> B[Enhance Query via LLM]
+flowchart LR
+    A[Input Query] --> B[Enhance Query via LLM]
     B --> C[User Selects Query]
     C --> D[Search arXiv API]
-    D --> E[User Selects Paper]
+    D --> E[User Selects Paper] 
     E --> F[Summarization via 70B LLM]
     F --> G[Matrix Table Generation]
 ```
